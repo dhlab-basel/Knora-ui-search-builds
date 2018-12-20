@@ -10,6 +10,9 @@ export declare class ExtendedSearchComponent implements OnInit {
     private _router;
     private _cacheService;
     private _gravSearchService;
+    /**
+     * @param {string} route - Route after search
+     */
     route: any;
     toggleExtendedSearchForm: EventEmitter<boolean>;
     ontologies: Array<OntologyMetadata>;
@@ -27,14 +30,17 @@ export declare class ExtendedSearchComponent implements OnInit {
     ngOnInit(): void;
     /**
      * Add a property to the search form.
+     * @returns void
      */
     addProperty(): void;
     /**
      * Remove the last property from the search form.
+     * @returns void
      */
     removeProperty(): void;
     /**
      * Gets all available ontologies for the search form.
+     * @returns void
      */
     initializeOntologies(): void;
     /**
@@ -42,6 +48,7 @@ export declare class ExtendedSearchComponent implements OnInit {
      * The classes and properties will be made available to the user for selection.
      *
      * @param ontologyIri Iri of the ontology chosen by the user.
+     * @returns void
      */
     getResourceClassesAndPropertiesForOntology(ontologyIri: string): void;
     /**
@@ -49,12 +56,13 @@ export declare class ExtendedSearchComponent implements OnInit {
      * The properties will be made available to the user for selection.
      *
      * @param resourceClassIri
+     * @returns void
      */
     getPropertiesForResourceClass(resourceClassIri: string): void;
     /**
      * Validates form and returns its status (boolean).
      */
-    private validateForm();
+    private validateForm;
     /**
      * Resets the form (selected resource class and specified properties) preserving the active ontology.
      */

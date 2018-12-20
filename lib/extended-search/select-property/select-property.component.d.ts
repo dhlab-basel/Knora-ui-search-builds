@@ -29,7 +29,7 @@ export declare class SelectPropertyComponent implements OnInit, OnDestroy {
     /**
      * Updates the properties array that is accessed by the template.
      */
-    private updatePropertiesArray();
+    private updatePropertiesArray;
     /**
      * Returns the selected property with the specified value.
      */

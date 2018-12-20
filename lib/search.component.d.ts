@@ -15,38 +15,48 @@ export declare class SearchComponent implements OnInit {
     constructor(_route: ActivatedRoute, _router: Router, _eleRef: ElementRef);
     ngOnInit(): void;
     /**
-     *
+     * @ignore
+     * Do search on Enter click, reset search on Escape
      * @param search_ele
      * @param event
+     * @returns void
      */
     onKey(search_ele: HTMLElement, event: any): void;
     /**
      * Realise a simple search
-     * @param search_ele
+     * @param {HTMLElement} search_ele
+     * @returns void
      */
     doSearch(search_ele: HTMLElement): void;
     /**
      * Reset the search
-     * @param search_ele
+     * @param {HTMLElement} search_ele
+     * @returns void
      */
     resetSearch(search_ele: HTMLElement): void;
     /**
      * Realise a previous search
-     * @param query
+     * @param {string} query
+     * @returns void
      */
     doPrevSearch(query: string): void;
     /**
      * Reset previous searches - the whole previous search or specific item by name
-     * @param name
+     * @param {string} name term of the search
+     * @returns void
      */
     resetPrevSearch(name?: string): void;
     /**
      * Set simple focus to active
+     *
+     * @returns void
      */
     setFocus(): void;
     /**
      * Switch according to the focus between simple or extended search
-     * @param name
+     *
+     * @param {string} name 2 cases: simpleSearch or extendedSearch
+     * @returns void
      */
     toggleMenu(name: string): void;
 }

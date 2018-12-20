@@ -20,7 +20,7 @@ export declare class SelectResourceClassComponent implements OnInit, OnChanges {
      * Initalizes the FormGroup for the resource class selection.
      * The initial value is set to null.
      */
-    private initForm();
+    private initForm;
     ngOnInit(): void;
     ngOnChanges(): void;
 }
