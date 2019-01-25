@@ -29,30 +29,39 @@ export declare class SearchComponent implements OnInit {
      */
     doSearch(search_ele: HTMLElement): void;
     /**
+     * @ignore
+     *
      * Reset the search
      * @param {HTMLElement} search_ele
      * @returns void
      */
     resetSearch(search_ele: HTMLElement): void;
     /**
+     * @ignore
+     *
      * Realise a previous search
      * @param {string} query
      * @returns void
      */
     doPrevSearch(query: string): void;
     /**
+     * @ignore
+     *
      * Reset previous searches - the whole previous search or specific item by name
      * @param {string} name term of the search
      * @returns void
      */
     resetPrevSearch(name?: string): void;
     /**
+     * @ignore
      * Set simple focus to active
      *
      * @returns void
      */
     setFocus(): void;
     /**
+     * @ignore
+     *
      * Switch according to the focus between simple or extended search
      *
      * @param {string} name 2 cases: simpleSearch or extendedSearch
